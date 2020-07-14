@@ -1,0 +1,35 @@
+{
+  "name": "webserver",
+  "description": "Installs/Configures webserver",
+  "long_description": "Installs/Configures webserver",
+  "maintainer": "Raghu",
+  "maintainer_email": "raghu@example.com",
+  "license": "All Rights Reserved",
+  "platforms": {
+
+  },
+  "dependencies": {
+
+  },
+  "providing": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "0.1.1",
+  "source_url": "",
+  "issues_url": "",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 14.0"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}

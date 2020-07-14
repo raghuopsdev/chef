@@ -1,0 +1,7 @@
+DEPENDENCIES
+  apt
+    path: .
+    metadata: true
+
+GRAPH
+  apt (7.3.0)
