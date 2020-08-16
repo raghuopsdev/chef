@@ -1,0 +1,35 @@
+{
+  "name": "myfirstcb",
+  "description": "Installs/Configures myfirstcb",
+  "long_description": "Installs/Configures myfirstcb",
+  "maintainer": "Raghu",
+  "maintainer_email": "raghuopsdev@gmail.com",
+  "license": "All Rights Reserved",
+  "platforms": {
+
+  },
+  "dependencies": {
+
+  },
+  "providing": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "0.2.0",
+  "source_url": "",
+  "issues_url": "",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 14.0"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}
