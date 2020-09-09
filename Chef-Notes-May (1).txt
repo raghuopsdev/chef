@@ -1,0 +1,35 @@
+
+i) Login to Chef Server
+ii) Create Organization
+iii) Download Starterkit
+iv) Install WinScp on local machine
+v) Upload the Kit to WorkStation using SCP
+vi) Goto Workstation and Unzip the kit at Home directory
+vii) Install ChefDK
+	wget https://packages.chef.io/files/stable/chefdk/2.0.28/el/6/chefdk-2.0.28-1.el6.x86_64.rpm
+	rpm -Uvh chefdk-2.0.28-1.el6.x86_64.rpm
+viii) Create a cookbook in Workstation under home/ec2-user/chef-repo/cookbooks/
+	chef generate cookbook <cookbook name>
+ix) Go to cookbook/recipes/default.rb file, Write the recipe
+x) Upload the cookbook to Server using Knife (make sure you are in chef-repo folder)
+	knife upload <cookbook name>
+xi) Create SSH connection between WS and Node
+	a) cd /home/ec2-user/.ssh
+	b) ssh-keygen -t rsa
+	c) copy id_rsa.pub (only the lastkey) from WS
+	d) Append in Node under /home/ec2-user/.ssh/authorized_key
+	e) Test it by doing "ssh ec2-user@<Node IP>"
+
+BOOTSTRAP
+=========
+xii) Go to workstation
+xiii) knife bootstrap 172.31.32.63 --connection-user root --ssh-identity-file /root/.ssh/id_rsa --node-name WebServer
+xiv) Verify the Node status in the Chef Server
+xv) Vefify the chef-client version in Node
+
+RUN LIST
+=========
+xvi) Goto Chef Server -> Select Node -> Edit Run list -> Draf Cookbook to Run list
+xvii) Goto Node root and execute chef-client.
+
+
